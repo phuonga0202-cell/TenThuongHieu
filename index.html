@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TenThuongHieu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="#" class="logo">TenThuongHieu</a>
+
+    <nav>
+        <a href="#products">Sản phẩm</a>
+        <a href="#about">Về chúng tôi</a>
+        <button class="cart-btn" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </button>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="small-title">Slogan1</p>
+
+        <h1>
+            Slogan2
+        </h1>
+
+        <p class="hero-text">
+            Slogan3
+        </p>
+
+        <a href="#products" class="main-btn">
+            Khám phá sản phẩm
+        </a>
+    </div>
+</section>
+
+
+<section class="products-section" id="products">
+
+    <div class="section-title">
+        <p>Slogan4</p>
+        <h2>Sản phẩm nổi bật</h2>
+    </div>
+
+    <div class="product-grid">
+
+        <article class="product-card">
+            <div class="product-image">
+                <span>SanPham1</span>
+            </div>
+
+            <div class="product-info">
+                <h3>SanPham1</h3>
+                <p class="product-description">
+                    Mô tả SanPham1
+                </p>
+
+                <div class="product-bottom">
+                    <strong>89.000₫</strong>
+                    <button onclick="addToCart('SanPham1', 89000)">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="product-card">
+            <div class="product-image">
+                <span>SanPham2</span>
+            </div>
+
+            <div class="product-info">
+                <h3>SanPham2</h3>
+                <p class="product-description">
+                    Mô tả SanPham2
+                </p>
+
+                <div class="product-bottom">
+                    <strong>79.000₫</strong>
+                    <button onclick="addToCart('SanPham2', 79000)">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="product-card">
+            <div class="product-image">
+                <span>SanPham3</span>
+            </div>
+
+            <div class="product-info">
+                <h3>SanPham3</h3>
+                <p class="product-description">
+                    Mô tả SanPham3
+                </p>
+
+                <div class="product-bottom">
+                    <strong>69.000₫</strong>
+                    <button onclick="addToCart('SanPham3', 69000)">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="product-card">
+            <div class="product-image">
+                <span>SanPham4</span>
+            </div>
+
+            <div class="product-info">
+                <h3>SanPham4</h3>
+                <p class="product-description">
+                    Mô tả SanPham4
+                </p>
+
+                <div class="product-bottom">
+                    <strong>99.000₫</strong>
+                    <button onclick="addToCart('SanPham4', 99000)">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<section class="about" id="about">
+
+    <p class="small-title">Slogan5</p>
+
+    <h2>TenThuongHieu</h2>
+
+    <p>
+        Slogan6. Đây là nơi bạn có thể giới thiệu
+        câu chuyện thương hiệu, phong cách và sản phẩm của mình.
+    </p>
+
+</section>
+
+
+<footer>
+    <h3>TenThuongHieu</h3>
+    <p>Slogan7</p>
+    <p class="copyright">
+        © 2026 TenThuongHieu. All rights reserved.
+    </p>
+</footer>
+
+
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+<div class="cart" id="cart">
+
+    <div class="cart-header">
+        <h2>Giỏ hàng</h2>
+        <button onclick="toggleCart()">×</button>
+    </div>
+
+    <div id="cart-items">
+        <p class="empty-cart">Giỏ hàng đang trống.</p>
+    </div>
+
+    <div class="cart-total">
+        <span>Tổng</span>
+        <strong id="cart-total">0₫</strong>
+    </div>
+
+    <button class="checkout-btn" onclick="checkout()">
+        Tiến hành đặt hàng
+    </button>
+
+</div>
+
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
