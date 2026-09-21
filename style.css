@@ -504,3 +504,32 @@ footer p {
         font-size: 48px;
     }
 }
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.quantity-control button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quantity-control span {
+    min-width: 15px;
+    text-align: center;
+}
+
+.cart-item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
